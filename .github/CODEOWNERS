@@ -1,0 +1,6 @@
+# Every change is reviewed by a maintainer.
+* @innerluxesdev
+
+# The checks and the gate decide whether a release ships; changes need extra care.
+/src/checks.js @innerluxesdev
+/src/evaluate.js @innerluxesdev
