@@ -1,0 +1,46 @@
+{
+  "name": "ai-eval-gate",
+  "version": "1.0.0",
+  "description": "Score the answers of an AI model against a test set, compare with the last release, and fail the build when quality drops. Contains, regex, JSON, length and personal data checks. Reads files, calls no model, no dependencies.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "bin": {
+    "ai-eval-gate": "bin/ai-eval-gate.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "docs",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.js\"",
+    "test:coverage": "node --test --experimental-test-coverage \"test/*.test.js\"",
+    "check": "node tools/check.mjs",
+    "example": "node tools/example.mjs"
+  },
+  "keywords": [
+    "llm",
+    "evaluation",
+    "ai-testing",
+    "regression-testing",
+    "quality-gate",
+    "ci",
+    "cli"
+  ],
+  "author": "INNERLUXES <info@innerluxes.dev>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/INNERLUXES/ai-eval-gate.git"
+  },
+  "homepage": "https://innerluxes.dev/artificial-intelligence/software-development"
+}
